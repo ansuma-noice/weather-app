@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-amber-500">
+
+
+
+    <div class="card   bg-amber-400 rounded-sm shadow box-border h-320 w-600 p-4 border-4 mx-40 my-20">
+
+        <div class="search rounded box-border bg-transparent text-center">
+            <div class="mt-9" >
+                <input type="text" name="search" id="cN" placeholder="enter city name" spellcheck="false" class="rounded-md text-center text-slate-800 focus:bg-slate-300  hover:bg-slate-200">
+                
+                <button class="press bg-slate-300 hover:bg-slate-400 active:bg-slate-500 rounded-lg w-8 h-7 ">GO</button>
+
+            </div>
+            <div class="error  hidden font-normal text-sm text-rose-500 ">city invalid</div>
+        </div>
+        
+        <div class="weather space-y-3 p-800 mx-80">
+           <div class="main">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="sunny" class="icon w-72">
+            <div class="temp px-20 text-2xl font-semibold">?? °C</div>
+           </div>
+            
+
+            <div class="details ml-20 text-lg hidden">
+
+                 <div class="city">___</div>
+                <div class="Ws">>>></div>
+                <div class="h">••</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
